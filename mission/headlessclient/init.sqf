@@ -1,12 +1,11 @@
-if(!isServer && !hasInterface) then {
-	// wait for player to start HC
-	waitUntil {!isNull player};
-	["Started"] call HC_fn_log;
-	
-	// notify server
-	HCConnected = true;
-	publicVariableServer "HCConnected";
-	HCObject = player;
-	publicVariableServer "HCObject";
-	["announce made, HCObject variable set to player object!"] call HC_fn_log;
-};
+if (!(!isServer && !hasInterface)) exitWith {}; // Headless client only
+// wait for player to start HC
+waitUntil {!isNull player};
+diag_log "HEADLESS CLIENT Started";
+
+// notify server
+HCConnected = true;
+publicVariableServer "HCConnected";
+HCObject = player;
+publicVariableServer "HCObject";
+diag_log "HEADLESS CLIENT announce made, HCObject variable set to player object!";
