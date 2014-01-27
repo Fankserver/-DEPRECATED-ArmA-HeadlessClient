@@ -1,0 +1,1 @@
+player groupChat format ["HC: %1", (_this select 0)];
