@@ -1,5 +1,5 @@
 if(!isServer && !hasInterface) then {
-	// player is ready start HC
+	// wait for player to start HC
 	waitUntil {!isNull player};
 	["Started"] call HC_fn_log;
 	
