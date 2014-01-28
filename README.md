@@ -1,6 +1,6 @@
-# DayZ-Epoch_HeadlessClient
+# ArmA 2/3 HeadlessClient
 
-Headless client support for DayZ Epoch
+Headless client support for ArmA 2/3
 
 ## Installation (Mission)
 
