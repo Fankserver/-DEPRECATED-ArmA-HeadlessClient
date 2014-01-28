@@ -8,4 +8,6 @@ diag_log format ["HEADLESS CLIENT create unit %1", _class];
 
 // create unit
 _unit = _group createUnit [_class, _pos, [], 0, "FORM"];
-_unit spawn (compile _code);
+call (compile _code);
+
+[_unit] joinSilent _group;
